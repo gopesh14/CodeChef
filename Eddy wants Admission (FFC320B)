@@ -1,0 +1,15 @@
+'''
+Eddy goes to Taxila University, one of the renowned university in the world. He wants to get admission in this university but the head of the university won't allow him unless he proves his command on numbers. The head doesn't want to defame his university by admitting a fool so he takes an admission test.
+
+He gives Eddy two numbers L and R. Now, Eddy is asked to tell the count of numbers between [L,R] (inclusive) which have even number of divisors.
+
+Now, he wants your help in this question. The Head tries to act smart by giving R<L to outsmart Eddy. In such cases he has to find answer for range [R,L] (inclusive). Will you help him?
+'''
+def countOddSquares(n, m) :
+	return (int(pow(m, 0.5)) - int(pow(n - 1, 0.5)))
+T = int(input())
+for _ in range(T):
+    m1,n1 = map(int,input().split())
+    m = max(m1,n1)
+    n = min(m1,n1)
+    print((m - n + 1) -countOddSquares(n, m))
