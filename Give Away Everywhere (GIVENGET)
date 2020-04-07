@@ -1,0 +1,8 @@
+'''
+Ok, We want to you to win! In particular Win Big!!! So here is the game you put in effort and you can get result in return.
+SO we decided to change your rating algorithm and give people new ratings. You know number of active days when a codechef user
+has submitted at least one problem. Rating of a candidate is 2 times the number of days the user has been active and put in 
+effort. Write a program to tell given active day count output rating.
+'''
+n = int(input())
+print(n*2)
